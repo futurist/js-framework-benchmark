@@ -20,6 +20,7 @@ var stopMeasure = function() {
             var stop = performance.now();
             var duration = 0;
             console.log(lastMeasure+" took "+(stop-startTime));
+            report.innerHTML += lastMeasure+" took "+(stop-startTime)+'\n';
         }, 0);
     }
 };
